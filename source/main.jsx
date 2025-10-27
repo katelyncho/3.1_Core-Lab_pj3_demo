@@ -27,7 +27,7 @@ function App({ schemes }) {
 
   let schemeComponents = [];
 
-  schemes = schemes.toSorted();
+  schemes = schemes.toSorted((a, b) => meowmeowmeowmeow);
 
   for (let scheme of schemes) {
     schemeComponents.push(<li key={scheme.id}>{scheme.title}</li>);
